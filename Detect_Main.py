@@ -28,7 +28,7 @@ image_button.pack(side=tk.RIGHT, padx=20)
 root.mainloop()
 
 
-model = YOLO("../best.pt")
+model = YOLO("../Defect_40.pt")
 
 model.predict(source=sourcevar, show=True, save=True, conf=0.12, save_txt=True, imgsz=512)
 
